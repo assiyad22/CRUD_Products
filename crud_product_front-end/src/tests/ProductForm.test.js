@@ -10,7 +10,6 @@ describe('ProductForm component', () => {
         <ProductForm />
       </BrowserRouter>
     );
-
     expect(screen.getByLabelText(/Name/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/Price/i)).toBeInTheDocument();
   });
