@@ -25,4 +25,4 @@ Abderrahmane Assiyad
 "# CRUD_Products" 
 
 ## Login interface
-Log in using "admin" for username and "password" for password", the login is required only one time since it gets stored in local storage, before it gets expired after 1 day, atfer it expires a new login is required, note that the login phase is also required when tyring to perform all crud methods.
+Log in at the url "http://localhost:3000/login)" using "admin" for username and "password" for password", the login is required only one time since it gets stored in local storage, before it gets expired after 1 day, atfer it expires a new login is required, note that the login phase is also required when tyring to perform all crud methods.
