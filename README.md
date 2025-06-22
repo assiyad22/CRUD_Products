@@ -24,3 +24,6 @@ A full-stack Product Management app.
 ## Author
 Abderrahmane Assiyad
 "# CRUD_Products" 
+
+## Login interface
+Login using "admin" for username and "password" for password" to manage for doing all crud methods, the login is required only one time, regarding the token that gets saved in local storage under application, after 1 day the token gets expired, and a new login is required.
