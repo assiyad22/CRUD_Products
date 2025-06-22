@@ -26,6 +26,7 @@ function ProductForm() {
   const price = parseFloat(product.price);
     if (price <= 0) {
       alert("Price cannot be zero or negative. Please provide a valid amount");
+      
       return;
     }
 
