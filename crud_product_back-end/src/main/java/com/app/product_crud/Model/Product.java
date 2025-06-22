@@ -36,26 +36,26 @@ public class Product {
     }
 
     public String getName() {
-        return name;
+       return name;
     }
 
     public void setName(String name) {
-        this.name = name;
+       this.name = name;
     }
 
     public String getDescription() {
-        return description;
+       return description;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+       this.description = description;
     }
 
     public double getPrice() {
-        return price;
+       return price;
     }
 
     public void setPrice(double price) {
-        this.price = price;
+       this.price = price;
     }
 }
