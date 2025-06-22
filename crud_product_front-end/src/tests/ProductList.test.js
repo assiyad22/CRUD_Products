@@ -13,5 +13,7 @@ describe('ProductList component', () => {
   
   const headerElement = screen.getByText(/Product List/i);
   expect(headerElement).toBeInTheDocument();
+  
   });
 });
+
