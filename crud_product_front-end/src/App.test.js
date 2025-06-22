@@ -13,7 +13,7 @@ test('renders product management app', () => {
   
   // Add Product elements - we need to distinguish between them
   const addProductLinks = screen.getAllByRole('link', { name: 'Add Product' });
-  expect(addProductLinks).toHaveLength(2); // Both should be links
+  expect(addProductLinks).toHaveLength(2);
   
   // Search input
   expect(screen.getByPlaceholderText('Search by name or description...')).toBeInTheDocument();
