@@ -1,4 +1,5 @@
 INSERT INTO products (name, description, price) VALUES
+  
 ('TV', '55" 4K Ultra HD Smart TV', 2821.21),
 ('Radio', 'Portable AM/FM with Bluetooth', 822.2),
 ('Table', 'Wooden dining table, 6-seater', 579.25),
