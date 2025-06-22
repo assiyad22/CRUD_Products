@@ -2,8 +2,8 @@ version: '3.8'
 
 services:
   app:
-    build: .  # This tells Docker to build using the Dockerfile in current directory
-    image: product:crush-backend  # Match the name in your screenshot
+    build: . 
+    image: product:crush-backend 
     ports:
       - "8080:8080"
     depends_on:
@@ -11,14 +11,14 @@ services:
         condition: service_healthy
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/productdb
-      - SPRING_DATASOURCE_USERNAME=assiyad
-      - SPRING_DATASOURCE_PASSWORD=password
+      - SPRING_DATASOURCE_USERNAME=${DB_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${DB_PASSWORD}
 
   db:
     image: postgres:15
     environment:
-      - POSTGRES_USER=assiyad
-      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
       - POSTGRES_DB=productdb
     ports:
       - "5432:5432"
