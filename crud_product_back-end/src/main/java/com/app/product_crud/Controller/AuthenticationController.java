@@ -20,7 +20,7 @@ public class AuthenticationController {
     @PostMapping("/login")
     public String login(@RequestParam String username, @RequestParam String password) {
         Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(username, password)
+            new UsernamePasswordAuthenticationToken(username, password)
         );
 
         if (authentication.isAuthenticated()) {
