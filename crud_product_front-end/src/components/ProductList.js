@@ -23,7 +23,6 @@ function ProductList() {
     await deleteProduct(id);
     loadProducts();
     toast.success("Product deleted!");
- 
   }
 };
 
@@ -44,7 +43,6 @@ function ProductList() {
     setSearchTerm("");
     setFilteredProducts(products);
     setCurrentPage(1);
-
   };
 
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
