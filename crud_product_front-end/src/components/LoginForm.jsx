@@ -15,15 +15,15 @@ function LoginForm() {
         params: { username, password },
       });
 
-      const token = response.data;
-      // Save token in localStorage
-      localStorage.setItem("token", token);
+  const token = response.data;
+    // Save token in localStorage
+    localStorage.setItem("token", token);
 
-      alert("Login successful!");
-      navigate("/");
+    alert("Login successful!");
+    navigate("/");
     } catch (error) {
-      console.error("Login failed", error);
-      alert("Invalid username or password");
+    console.error("Login failed", error);
+    alert("Invalid username or password");
     }
   };
 
