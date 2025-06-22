@@ -17,10 +17,10 @@ function App() {
                 <Link className="nav-link" to="/">Product List</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/add">Add Product</Link>
+                 <Link className="nav-link" to="/add">Add Product</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/login">Login</Link>
+                 <Link className="nav-link" to="/login">Login</Link>
               </li>
             </ul>
           </div>
