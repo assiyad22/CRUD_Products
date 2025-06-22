@@ -10,8 +10,8 @@ describe('ProductList component', () => {
         <ProductList products={[]} />
       </BrowserRouter>
     );
-
-    const headerElement = screen.getByText(/Product List/i);
-    expect(headerElement).toBeInTheDocument();
+  
+  const headerElement = screen.getByText(/Product List/i);
+  expect(headerElement).toBeInTheDocument();
   });
 });
