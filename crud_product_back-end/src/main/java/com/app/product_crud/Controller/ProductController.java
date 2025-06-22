@@ -48,9 +48,7 @@ public class ProductController {
     }
 
     @PutMapping("/batch-update")
-    public ResponseEntity<List<Product>> updateMultipleProducts(
-            @Valid @RequestBody List<@Valid Product> products
-    ) {
+    public ResponseEntity<List<Product>> updateMultipleProducts(@Valid @RequestBody List<@Valid Product> products) {
         List<Product> updatedProducts = productService.updateMultipleProducts(products);
         return ResponseEntity.ok(updatedProducts);
     }
@@ -62,9 +60,7 @@ public class ProductController {
     }
 
     @DeleteMapping("/batch-delete")
-    public ResponseEntity<Void> deleteMultipleProducts(
-            @RequestBody List<Long> productIds
-    ) {
+    public ResponseEntity<Void> deleteMultipleProducts(@RequestBody List<Long> productIds) {
         productService.deleteMultipleProducts(productIds);
         return ResponseEntity.noContent().build();
     }
